@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student name:</strong>
+  <%= @exam.student_name %>
+</p>
+
+<p>
+  <strong>Answers:</strong>
+  <%= @exam.answers %>
+</p>
+
+<p>
+  <strong>Grade:</strong>
+  <%= grade(parse()) %>
+
+</p>
+
+<%= link_to 'Edit', edit_exam_path(@exam) %> |
+<%= link_to 'Back', exams_path %>
